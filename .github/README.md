@@ -17,6 +17,28 @@ Our objective is to allow users to write stories in plain text, Markdown, ${\TeX
 
 Each **Tanu** library is unique -- requiring its own login credentials -- and offers members of that library access to Like, Bookmark, Commenting, Tagging, and Subscription options.
 
+### Features
+
+- [ ] User accounts
+- [ ] Subscriptions
+- [ ] Comments
+- [ ] Tags
+- [ ] Reactions
+- [ ] Formatting
+- [ ] Export to eBook
+- [ ] Search
+- [ ] Moderation
+- [ ] Email notifications
+- [ ] Themes
+- [ ] Mobile support
+- [ ] Bookmarks
+- [ ] View history
+- [ ] Groups
+- [ ] Kudos
+- [ ] Community Posts
+
+For more detailed information about the Features, please see the [Wiki](https://github.com/NewGaea/Tanu/wiki/Features).
+
 ## License <a name = "license"></a>
 
 Tanu is licensed under the [GNU General Public License v3.0](https://github.com/NewGaea/Tanu/blob/main/LICENSE). The license is available [online](https://www.gnu.org/licenses/gpl-3.0.en.html) and is also included in the repository in the [LICENSE](../LICENSE) file. 
