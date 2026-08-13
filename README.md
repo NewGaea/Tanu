@@ -15,7 +15,8 @@ editions without tying their community to a commercial platform.
 
 The original 2023 repository never progressed beyond a Next.js starter. In August 2026 it was
 replaced with a smaller server-rendered foundation chosen for Tanu's actual domain: Django 5.2 LTS,
-Python 3.12, and PostgreSQL. The reasoning and alternatives are recorded in
+Python 3.14, and PostgreSQL. Python 3.12 remains the minimum supported version. The reasoning and
+alternatives are recorded in
 [ADR-0001](docs/adr/0001-application-foundation.md).
 
 ## Quick start
@@ -63,7 +64,8 @@ uv run python manage.py check
 uv run pip-audit
 ```
 
-GitHub Actions runs the same checks, verifies migrations, and evaluates Django's deployment checks.
+GitHub Actions runs the same checks on Python 3.12 and 3.14, verifies migrations, evaluates Django's
+deployment checks, and builds the production container.
 
 ## Configuration
 
