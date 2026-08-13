@@ -2,6 +2,7 @@
 
 - **Status:** Accepted
 - **Date:** 2026-08-13
+- **Amended:** 2026-08-13 (Python 3.14 production baseline)
 - **Deciders:** Tanu maintainers
 
 ## Context
@@ -16,8 +17,9 @@ default, and useful without requiring a client-side JavaScript application.
 
 ## Decision
 
-Use a server-rendered Django 5.2 LTS modular monolith on Python 3.12, backed by PostgreSQL in deployed
-environments. Use Django templates for the initial interface, add small amounts of progressive
+Use a server-rendered Django 5.2 LTS modular monolith on Python 3.14, backed by PostgreSQL in deployed
+environments. Keep Python 3.12 as the minimum supported interpreter and test both ends of the
+supported range. Use Django templates for the initial interface, add small amounts of progressive
 enhancement only where they earn their maintenance cost, and manage dependencies with uv.
 
 SQLite is supported for the zero-configuration development path. PostgreSQL is the deployment
