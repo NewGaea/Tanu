@@ -1,0 +1,44 @@
+name: Documentation improvement
+description: Report missing, inaccurate, confusing, or inaccessible documentation.
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where is the problem?
+      description: Link the page or name the file and section.
+      placeholder: README.md — Quick start
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs improvement?
+      description: Explain what is wrong, missing, hard to find, or hard to understand.
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Who needs this information?
+      description: Describe the reader and what they are trying to accomplish.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
+      description: Optional. Draft wording, examples, or a better structure are welcome.
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Contributor agreement
+      options:
+        - label: I searched for an existing report and will follow the Code of Conduct.
+          required: true

@@ -1,0 +1,89 @@
+name: Bug report
+description: Report behaviour that is broken, surprising, or inaccessible.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Tanu. Remove secrets, personal information, and unpublished
+        story content from anything you share. Security vulnerabilities belong in the private
+        reporting process linked on the issue chooser.
+
+  - type: checkboxes
+    id: existing
+    attributes:
+      label: Existing reports
+      description: Please check that this has not already been reported.
+      options:
+        - label: I searched the open and closed issues for the same problem.
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and its effect in a few clear sentences.
+      placeholder: I expected… Instead…
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How can we reproduce it?
+      description: Give the smallest reliable sequence, including any safe sample data needed.
+      placeholder: |
+        1. Start Tanu with…
+        2. Open…
+        3. Select…
+        4. Observe…
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Explain the result you expected, including relevant accessibility behaviour.
+    validations:
+      required: true
+
+  - type: input
+    id: revision
+    attributes:
+      label: Tanu version or revision
+      description: Use a release such as v0.1.0 or a commit identifier such as a1b2c3d.
+      placeholder: main at a1b2c3d
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the operating system, Python version, database, browser, and install method that matter.
+      placeholder: |
+        - OS: macOS 15.6
+        - Python: 3.12.11
+        - Database: SQLite
+        - Browser: Firefox 142
+        - Install: uv local setup
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or other evidence
+      description: Paste a short redacted excerpt or attach screenshots. Add useful alt text in the surrounding prose.
+      render: shell
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Contributor agreement
+      options:
+        - label: I will follow the repository's Code of Conduct.
+          required: true

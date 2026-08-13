@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/NewGaea/Tanu/security/policy
+    about: Follow the private reporting instructions; do not publish vulnerability details here.

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Something went wrong · Tanu{% endblock %}
+
+{% block content %}
+  <section class="error-page">
+    <div class="shell error-inner">
+      <p class="error-code">500</p>
+      <h1>We lost our place.</h1>
+      <p>Something went wrong while opening this page. Please try again in a little while.</p>
+      <a class="button button-primary" href="{% url 'home' %}">Return to Tanu</a>
+    </div>
+  </section>
+{% endblock %}

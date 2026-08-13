@@ -1,0 +1,60 @@
+{% load static %}
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173f33">
+    <meta
+      name="description"
+      content="Tanu is an open-source, self-hostable home for independent stories."
+    >
+    <title>{% block title %}Tanu · Stories on your terms{% endblock %}</title>
+    <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+    <link rel="stylesheet" href="{% static 'css/tanu.css' %}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="{% url 'home' %}" aria-label="Tanu home">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M8 12.5c6.7 0 12 1.9 16 5.8 4-3.9 9.3-5.8 16-5.8v24c-6.7 0-12 1.9-16 5.8-4-3.9-9.3-5.8-16-5.8z" />
+            <path d="M24 18.3v24M12.7 18.2c4.4.3 8.2 1.7 11.3 4.3M35.3 18.2c-4.4.3-8.2 1.7-11.3 4.3" />
+          </svg>
+          <span>Tanu</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="{% url 'home' %}#principles">Principles</a>
+          <a href="{% url 'home' %}#roadmap">Roadmap</a>
+          <a href="https://github.com/NewGaea/Tanu">Source</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <a class="brand brand-footer" href="{% url 'home' %}">
+            <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M8 12.5c6.7 0 12 1.9 16 5.8 4-3.9 9.3-5.8 16-5.8v24c-6.7 0-12 1.9-16 5.8-4-3.9-9.3-5.8-16-5.8z" />
+              <path d="M24 18.3v24" />
+            </svg>
+            <span>Tanu</span>
+          </a>
+          <p>Independent stories deserve durable homes.</p>
+        </div>
+        <div class="footer-meta">
+          <p>Open source under the GNU GPL v3.0.</p>
+          <a href="https://github.com/NewGaea/Tanu">GitHub repository</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

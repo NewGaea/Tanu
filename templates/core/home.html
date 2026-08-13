@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Foundation reboot · 2026</p>
+        <h1>A home for stories that belong to their writers.</h1>
+        <p class="hero-lede">
+          Tanu is becoming an open-source, self-hostable publishing library for independent
+          authors—built for chaptered reading, portable books, and communities on their own terms.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="#roadmap">Explore the roadmap</a>
+          <a class="button button-secondary" href="https://github.com/NewGaea/Tanu">
+            View the source
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M5 10h10M11 6l4 4-4 4" />
+            </svg>
+          </a>
+        </div>
+        <div class="status-line" aria-label="Current project status">
+          <span class="status-dot"></span>
+          <span><strong>Current status</strong> · Foundation under active development</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="book book-back">
+          <span class="book-kicker">A Tanu library</span>
+          <strong>Stories,<br>kept close.</strong>
+          <span class="book-rule"></span>
+          <span class="book-author">Owned by its community</span>
+        </div>
+        <div class="book book-front">
+          <svg viewBox="0 0 64 64">
+            <path d="M11 16c8.6 0 15.6 2.5 21 7.4C37.4 18.5 44.4 16 53 16v32c-8.6 0-15.6 2.5-21 7.4C26.6 50.5 19.6 48 11 48z" />
+            <path d="M32 23.4v32" />
+          </svg>
+          <span>Read without surrendering ownership.</span>
+        </div>
+        <span class="spark spark-one">✦</span>
+        <span class="spark spark-two">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-strip" aria-label="Project commitments">
+    <div class="shell proof-grid">
+      <p><strong>Self-hostable</strong><span>Your library, your address, your rules.</span></p>
+      <p><strong>Portable by design</strong><span>Stories should outlive any one platform.</span></p>
+      <p><strong>Open source</strong><span>Inspect it, adapt it, help shape it.</span></p>
+    </div>
+  </section>
+
+  <section class="section principles" id="principles">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark"><span></span> What guides Tanu</p>
+        <h2>Publishing infrastructure with a point of view.</h2>
+        <p>
+          The goal is not another feed. It is a calm, durable place where writers can publish and
+          readers can settle into a story.
+        </p>
+      </div>
+
+      <div class="principle-grid">
+        <article class="principle-card">
+          <span class="principle-number">01</span>
+          <div class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M6 9.5h20v16H6zM10 9.5V6h12v3.5M11 15h10M11 20h7" /></svg>
+          </div>
+          <h3>Ownership before reach</h3>
+          <p>
+            A Tanu library should be deployable and controlled by the people who rely on it, with
+            clear exports instead of lock-in.
+          </p>
+        </article>
+
+        <article class="principle-card featured-card">
+          <span class="principle-number">02</span>
+          <div class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M5 9c4.6 0 8.3 1.3 11 4 2.7-2.7 6.4-4 11-4v16c-4.6 0-8.3 1.3-11 4-2.7-2.7-6.4-4-11-4zM16 13v16" /></svg>
+          </div>
+          <h3>Reading without noise</h3>
+          <p>
+            Accessible typography, useful navigation, and reader comfort come first. Engagement
+            mechanics should support a story, never interrupt it.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-number">03</span>
+          <div class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 17.5 13 22l11-12M16 3.5a12.5 12.5 0 1 0 0 25 12.5 12.5 0 0 0 0-25Z" /></svg>
+          </div>
+          <h3>Formats that travel</h3>
+          <p>
+            Authors should be able to write in familiar source formats and publish to the web,
+            EPUB, and other durable outputs.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section story-path">
+    <div class="shell path-grid">
+      <div class="path-copy">
+        <p class="eyebrow eyebrow-light"><span></span> One source, many forms</p>
+        <h2>Write once. Keep the source. Publish with care.</h2>
+        <p>
+          Tanu’s planned publishing path keeps author-owned source material at the centre, then
+          creates reader-friendly editions around it.
+        </p>
+        <p class="small-note">This workflow describes the product direction; it is not implemented yet.</p>
+      </div>
+
+      <ol class="path-steps">
+        <li>
+          <span>1</span>
+          <div><strong>Compose</strong><small>Plain text, Markdown, TeX, and more</small></div>
+        </li>
+        <li>
+          <span>2</span>
+          <div><strong>Structure</strong><small>Books, chapters, metadata, and editions</small></div>
+        </li>
+        <li>
+          <span>3</span>
+          <div><strong>Publish</strong><small>An accessible, responsive web edition</small></div>
+        </li>
+        <li>
+          <span>4</span>
+          <div><strong>Carry</strong><small>Portable ebook and archive exports</small></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section roadmap" id="roadmap">
+    <div class="shell">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark"><span></span> A practical route forward</p>
+          <h2>Rebuilding in deliberate chapters.</h2>
+        </div>
+        <p>
+          Tanu is early. The roadmap favours a trustworthy core over a sprawling feature list, and
+          each phase should leave behind something testable and useful.
+        </p>
+      </div>
+
+      <div class="roadmap-grid">
+        <article class="roadmap-card roadmap-current">
+          <div class="roadmap-meta"><span>Chapter one</span><strong>Now</strong></div>
+          <h3>A dependable foundation</h3>
+          <ul>
+            <li>Supported long-term stack</li>
+            <li>Reproducible local and container setup</li>
+            <li>Automated quality and security checks</li>
+            <li>Clear architecture and contribution docs</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card">
+          <div class="roadmap-meta"><span>Chapter two</span><strong>Next</strong></div>
+          <h3>Stories and libraries</h3>
+          <ul>
+            <li>Accounts, roles, and library membership</li>
+            <li>Books, chapters, revisions, and metadata</li>
+            <li>A focused authoring and publishing flow</li>
+            <li>Accessible public reading pages</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card">
+          <div class="roadmap-meta"><span>Chapter three</span><strong>Later</strong></div>
+          <h3>Portability and community</h3>
+          <ul>
+            <li>EPUB and print-friendly exports</li>
+            <li>Bookmarks, tags, comments, and follows</li>
+            <li>Import, backup, and migration tools</li>
+            <li>Federation research without premature promises</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section honest-status">
+    <div class="shell status-panel">
+      <div class="status-seal" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M12 17c8.2 0 14.9 2.3 20 7 5.1-4.7 11.8-7 20-7v30c-8.2 0-14.9 2.3-20 7-5.1-4.7-11.8-7-20-7zM32 24v30" /></svg>
+      </div>
+      <div>
+        <p class="eyebrow eyebrow-light"><span></span> An honest status note</p>
+        <h2>Not yet a publishing service. Finally, a sound place to build one.</h2>
+        <p>
+          This reboot replaces a dormant starter project with a maintained, documented, tested
+          base. Product work begins from here, in public, without presenting roadmap ideas as
+          finished features.
+        </p>
+      </div>
+      <a class="button button-paper" href="https://github.com/NewGaea/Tanu">Follow the work</a>
+    </div>
+  </section>
+{% endblock %}
