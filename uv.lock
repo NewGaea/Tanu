@@ -638,7 +638,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "coverage", extras = ["toml"], specifier = ">=7.10.0,<8" },
+    { name = "coverage", extras = ["toml"], specifier = ">=7.15.4,<8" },
     { name = "pip-audit", specifier = ">=2.9.0,<3" },
     { name = "ruff", specifier = ">=0.12.0,<1" },
 ]
