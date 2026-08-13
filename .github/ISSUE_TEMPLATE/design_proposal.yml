@@ -1,0 +1,51 @@
+name: Technical or design proposal
+description: Discuss a substantial architecture, data, interaction, or operational decision.
+title: "[Proposal]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form before implementing a decision that would be costly to reverse. Accepted
+        decisions may later become an architecture decision record in `docs/adr/`.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and problem
+      description: What decision is needed, and what constraints make it significant?
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: Compare realistic alternatives, including retaining the current design.
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommended direction
+      description: State the preferred option and why its trade-offs fit Tanu.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences and risks
+      description: Cover accessibility, privacy, data portability, hosting, migration, and maintenance where relevant.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Contributor agreement
+      options:
+        - label: I searched for related work and will follow the Code of Conduct.
+          required: true

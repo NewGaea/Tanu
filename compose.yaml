@@ -1,0 +1,36 @@
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      DJANGO_DEBUG: "true"
+      POSTGRES_HOST: db
+      POSTGRES_DB: tanu
+      POSTGRES_USER: tanu
+      POSTGRES_PASSWORD: tanu-development-only
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:18.4-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: tanu
+      POSTGRES_USER: tanu
+      POSTGRES_PASSWORD: tanu-development-only
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tanu -d tanu"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

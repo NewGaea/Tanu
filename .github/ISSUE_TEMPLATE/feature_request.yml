@@ -1,0 +1,63 @@
+name: Feature request
+description: Propose a user-facing improvement or new capability.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tanu is early enough that the problem matters more than a predetermined implementation.
+        Please describe who needs the change and why before proposing technology.
+
+  - type: checkboxes
+    id: existing
+    attributes:
+      label: Existing work
+      options:
+        - label: I searched existing issues and the roadmap for this request.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Who is affected, what are they trying to do, and what gets in their way?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe what a successful result would let people do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Possible approach
+      description: Optional. Suggest behaviour or an implementation if you have one in mind.
+
+  - type: textarea
+    id: considerations
+    attributes:
+      label: Accessibility, privacy, and self-hosting considerations
+      description: Note relevant keyboard, screen-reader, data-control, portability, or operational needs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include current workarounds or explain why doing nothing is costly.
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Contributor agreement
+      options:
+        - label: I will follow the repository's Code of Conduct.
+          required: true

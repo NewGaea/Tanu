@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Page not found · Tanu{% endblock %}
+
+{% block content %}
+  <section class="error-page">
+    <div class="shell error-inner">
+      <p class="error-code">404</p>
+      <h1>This chapter is missing.</h1>
+      <p>The page may have moved, or the story may have taken an unexpected turn.</p>
+      <a class="button button-primary" href="{% url 'home' %}">Return to Tanu</a>
+    </div>
+  </section>
+{% endblock %}
